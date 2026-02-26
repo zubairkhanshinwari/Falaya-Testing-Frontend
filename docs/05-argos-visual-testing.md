@@ -3,6 +3,9 @@
 ## What is integrated
 - Argos Playwright reporter is configured in `playwright.config.ts`
 - Visual test spec added: `tests/falaya-visual.spec.ts`
+- Step-level Argos screenshots are captured in:
+  - `tests/falaya-url-verification.spec.ts`
+  - `tests/falaya-mobile-responsive.spec.ts`
 - CI passes `ARGOS_TOKEN` from GitHub secrets in `.github/workflows/playwright.yml`
 
 ## One-time setup
@@ -13,6 +16,7 @@
 
 ## How it works
 - The visual suite captures page screenshots using `argosScreenshot(...)`.
+- Functional suites also capture screenshots at each major step and page check.
 - In CI, snapshots are uploaded to Argos when `ARGOS_TOKEN` is available.
 - Local runs still work without a token (upload is disabled).
 

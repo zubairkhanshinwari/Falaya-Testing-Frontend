@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { devices, expect, test } from '@playwright/test';
+import { argosScreenshot } from '@argos-ci/playwright';
 import {
   discoverNavUrls,
   loadCachedDiscoveredUrls,
@@ -194,6 +195,7 @@ test.describe.serial('Falaya mobile responsive', () => {
         const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20_000 });
         status = response?.status() ?? null;
         finalUrl = page.url();
+        const finalSlug = toSlug(finalUrl);
 
         const failures: string[] = [];
 
@@ -229,6 +231,10 @@ test.describe.serial('Falaya mobile responsive', () => {
         if (notes.includes('Hamburger detected') && !menuOpened) {
           failures.push('Hamburger menu not usable after interaction');
         }
+
+        await argosScreenshot(page, `mobile-responsive-page-${finalSlug}-post-checks`, {
+          fullPage: true,
+        });
 
         result = failures.length === 0 ? 'PASS' : 'FAIL';
         reason = failures.length === 0 ? 'All checks passed' : failures.join('; ');

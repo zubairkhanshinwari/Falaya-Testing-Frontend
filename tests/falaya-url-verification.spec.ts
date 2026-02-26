@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { expect, test } from '@playwright/test';
+import { argosScreenshot } from '@argos-ci/playwright';
 import {
   discoverNavUrls,
   extractFooterLinks,
@@ -17,6 +18,14 @@ const REPORTS_DIR = path.resolve('reports');
 const DISCOVERED_URLS_CACHE = path.join(REPORTS_DIR, 'discovered-urls.json');
 const URL_REPORT_HTML = path.join(REPORTS_DIR, 'url-verification-report.html');
 const URL_REPORT_JSON = path.join(REPORTS_DIR, 'url-verification-report.json');
+
+function toSlug(urlValue: string): string {
+  const parsed = new URL(urlValue);
+  const pathnameSlug = parsed.pathname.replace(/\/+$/, '').replace(/^\/+/, '').replace(/[^a-zA-Z0-9]+/g, '-');
+  const searchSlug = parsed.search.replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const slug = [pathnameSlug || 'home', searchSlug].filter(Boolean).join('-');
+  return slug.toLowerCase();
+}
 
 async function hasMeaningfulTitleOrHeading(page: import('@playwright/test').Page): Promise<boolean> {
   const pageTitle = await page.title();
@@ -94,6 +103,7 @@ test.describe.serial('Falaya URL verification', () => {
         const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20_000 });
         status = response?.status() ?? null;
         finalUrl = page.url();
+        const pageSlug = toSlug(finalUrl);
 
         const reasons: string[] = [];
         const statusOk = status !== null && status >= 200 && status <= 399;
@@ -121,6 +131,10 @@ test.describe.serial('Falaya URL verification', () => {
           finalUrl,
           result: reasons.length === 0 ? 'PASS' : 'FAIL',
           reason: reasons.length === 0 ? 'All checks passed' : reasons.join('; '),
+        });
+
+        await argosScreenshot(page, `url-verification-page-${pageSlug}`, {
+          fullPage: true,
         });
 
         const footerLinks = await extractFooterLinks(page, finalUrl, rootUrl);
@@ -184,6 +198,9 @@ test.describe.serial('Falaya URL verification', () => {
     const screenshotPath = path.join(REPORTS_DIR, 'screenshots', 'url', 'url-verification-final.png');
     try {
       await page.screenshot({ path: screenshotPath, fullPage: true, timeout: 30_000, animations: 'disabled' });
+      await argosScreenshot(page, 'url-verification-final-state', {
+        fullPage: true,
+      });
       await testInfo.attach('url-verification-final-screenshot', {
         path: screenshotPath,
         contentType: 'image/png',
