@@ -14,7 +14,13 @@ export default defineConfig({
     [process.env.CI ? 'dot' : 'list'],
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
     ['allure-playwright', { outputFolder: 'allure-results' }],
-    ['@argos-ci/playwright/reporter', { uploadToArgos: !!process.env.ARGOS_TOKEN }],
+    [
+      '@argos-ci/playwright/reporter',
+      {
+        uploadToArgos: !!process.env.CI,
+        token: process.env.ARGOS_TOKEN,
+      },
+    ],
   ],
   use: {
     baseURL: 'https://falaya.com',
