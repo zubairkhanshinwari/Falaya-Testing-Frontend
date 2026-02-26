@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-02-25T09:45:42.044Z",
+  "baseUrl": "https://falaya.com",
+  "navUrls": [
+    "https://falaya.com/about-falaya/about-us",
+    "https://falaya.com/about-falaya/falaya-mobile-app",
+    "https://falaya.com/about-falaya/testimonials",
+    "https://falaya.com/about-falaya/transaction-management",
+    "https://falaya.com/comparison",
+    "https://falaya.com/features",
+    "https://falaya.com/pricing",
+    "https://falaya.com/research/faqs",
+    "https://falaya.com/research/home-sellers-guide",
+    "https://falaya.com/research/learn",
+    "https://falaya.com/research/real-estate-documents",
+    "https://falaya.com/research/videos",
+    "https://falaya.com/sell/home-builder",
+    "https://falaya.com/sell/home-owner",
+    "https://falaya.com/sell/institutional-investor",
+    "https://falaya.com/sell/real-estate-investor"
+  ],
+  "sectionUrls": {
+    "Sell": [
+      "https://falaya.com/sell/home-owner",
+      "https://falaya.com/sell/real-estate-investor",
+      "https://falaya.com/sell/home-builder",
+      "https://falaya.com/sell/institutional-investor"
+    ],
+    "Pricing": [
+      "https://falaya.com/pricing"
+    ],
+    "Research": [
+      "https://falaya.com/research/learn",
+      "https://falaya.com/research/faqs",
+      "https://falaya.com/research/real-estate-documents",
+      "https://falaya.com/research/videos",
+      "https://falaya.com/research/home-sellers-guide"
+    ],
+    "Why Falaya": [
+      "https://falaya.com/features",
+      "https://falaya.com/comparison",
+      "https://falaya.com/about-falaya/testimonials",
+      "https://falaya.com/about-falaya/falaya-mobile-app",
+      "https://falaya.com/about-falaya/transaction-management",
+      "https://falaya.com/about-falaya/about-us"
+    ]
+  },
+  "directUrls": []
+}

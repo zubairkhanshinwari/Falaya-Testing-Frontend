@@ -1,0 +1,2294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Falaya URL Verification Report</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; margin: 20px; background: #f7f9fc; color: #1f2937; }
+    h1, h2 { margin: 0 0 12px; }
+    .card { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f3f4f6; position: sticky; top: 0; }
+    tr[data-result='PASS'] td.result { color: #15803d; font-weight: 600; }
+    tr[data-result='FAIL'] td.result { color: #b91c1c; font-weight: 700; }
+    .controls { margin-bottom: 10px; }
+    .summary span { display: inline-block; margin-right: 12px; font-weight: 600; }
+    a { color: #1d4ed8; }
+  </style>
+</head>
+<body>
+
+    <div class="card">
+      <h1>Falaya URL verification</h1>
+      <div class="summary">
+        <span>Total pages: 16</span>
+        <span>Page PASS: 16</span>
+        <span>Page FAIL: 0</span>
+        <span>Total footer links: 228</span>
+        <span>Footer PASS: 228</span>
+        <span>Footer FAIL: 0</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Pages Checked</h2>
+      <div class="controls">
+        <label>Filter:
+          <select id="filter-pages">
+            <option value="ALL">All</option>
+            <option value="PASS">PASS only</option>
+            <option value="FAIL">FAIL only</option>
+          </select>
+        </label>
+      </div>
+      <table id="pages">
+        <thead>
+          <tr><th>URL</th><th>Status</th><th>Final URL</th><th>Result</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+          <tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/testimonials/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/transaction-management/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>200</td>
+      <td>https://falaya.com/comparison/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>200</td>
+      <td>https://falaya.com/pricing/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>200</td>
+      <td>https://falaya.com/research/real-estate-documents/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-builder</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/home-builder/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-owner</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/home-owner/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/institutional-investor</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/institutional-investor/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/real-estate-investor</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/real-estate-investor/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Footer Links Checked</h2>
+      <div class="controls">
+        <label>Filter:
+          <select id="filter-footer">
+            <option value="ALL">All</option>
+            <option value="PASS">PASS only</option>
+            <option value="FAIL">FAIL only</option>
+          </select>
+        </label>
+      </div>
+      <table id="footer">
+        <thead>
+          <tr><th>Source Page</th><th>Link Text</th><th>Href</th><th>Status</th><th>Final URL</th><th>Result</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+          <tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Learn More</td>
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/transaction-management/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Download</td>
+      <td>https://falaya.com/wp-content/uploads/2023/09/Seller-consultation-guide.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2023/09/Seller-consultation-guide.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact-old</td>
+      <td>200</td>
+      <td>https://falaya.com/contact-old/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Get Started</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Download</td>
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Learn More</td>
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/transaction-management/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Learn More</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Download</td>
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Contact Sales</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Download</td>
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Download</td>
+      <td>https://falaya.com/wp-content/uploads/2023/11/Falaya-Home-Sellers-Guide.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2023/11/Falaya-Home-Sellers-Guide.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo.jpg&quot; class=&quot;attachment-full size-full wp-image-13485&quot; alt=&quot;commission settlement buyer agent compensation&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement</td>
+      <td>200</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>18 Months After The Commission Settlement: The Stunning Reality Nobody Wants to Admit</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement</td>
+      <td>200</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1.jpg&quot; class=&quot;attachment-full size-full wp-image-13477&quot; alt=&quot;falaya pricing explained&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Falaya Pricing Explained: How to Choose the Right Home-Selling Option</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo.jpg&quot; class=&quot;attachment-full size-full wp-image-13433&quot; alt=&quot;Falaya Launches In north carolina&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Falaya Launches in North Carolina: A New Way to List on the MLS and Save Thousands</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1.jpg&quot; class=&quot;attachment-full size-full wp-image-13428&quot; alt=&quot;home isn&amp;#039;t selling&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/why-your-home-isnt-selling</td>
+      <td>200</td>
+      <td>https://falaya.com/why-your-home-isnt-selling/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Why Your Home Isn’t Selling and How to Fix It Without Dropping the Price</td>
+      <td>https://falaya.com/why-your-home-isnt-selling</td>
+      <td>200</td>
+      <td>https://falaya.com/why-your-home-isnt-selling/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo.jpg&quot; class=&quot;attachment-full size-full wp-image-13397&quot; alt=&quot;How to Sell Your Home In A Slow Market&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>How to Sell Your Home in a Slow Market: Strategies That Work When Buyers Are Scarce</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1.jpg&quot; class=&quot;attachment-full size-full wp-image-13389&quot; alt=&quot;how to sell tenant-occupied property&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; title=&quot;Sellers Guide Page&quot;&gt;</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>How to Sell a Tenant-Occupied Property: Rights, Timelines, and Best Practices</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Download</td>
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Making a Deal</td>
+      <td>https://falaya.com/category/sellers/making-a-deal</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/making-a-deal/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Moving + Closing</td>
+      <td>https://falaya.com/category/buyers/moving-closing</td>
+      <td>200</td>
+      <td>https://falaya.com/category/buyers/moving-closing/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Preparing to Sell</td>
+      <td>https://falaya.com/category/sellers/preparing-to-sell</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/preparing-to-sell/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Pricing your Home</td>
+      <td>https://falaya.com/category/sellers/pricing-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/pricing-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Timing your Sale</td>
+      <td>https://falaya.com/category/sellers/timing-your-sale</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/timing-your-sale/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Tips &amp; Advice</td>
+      <td>https://falaya.com/category/sellers/tips-advice</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/tips-advice/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Moving + Closing</td>
+      <td>https://falaya.com/category/sellers/moving-closing-sellers</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/moving-closing-sellers/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/03-29-2021.jpg&quot; title=&quot;03-29-2021&quot; alt=&quot;03-29-2021&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/are-home-warranties-a-waste-of-money</td>
+      <td>200</td>
+      <td>https://falaya.com/are-home-warranties-a-waste-of-money/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Are Home Warranties a Waste of Money</td>
+      <td>https://falaya.com/are-home-warranties-a-waste-of-money</td>
+      <td>200</td>
+      <td>https://falaya.com/are-home-warranties-a-waste-of-money/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/L-8-e1644702539550-min-scaled-1.jpg&quot; title=&quot;L-8-e1644702539550-min&quot; alt=&quot;World 1st real estate nft home&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/first-real-estate-backed-nft-sale-in-the-us</td>
+      <td>200</td>
+      <td>https://falaya.com/first-real-estate-backed-nft-sale-in-the-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>New Waves Sets With First Real Estate-Backed NFT Sale in the US</td>
+      <td>https://falaya.com/first-real-estate-backed-nft-sale-in-the-us</td>
+      <td>200</td>
+      <td>https://falaya.com/first-real-estate-backed-nft-sale-in-the-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-3.jpg&quot; title=&quot;1&quot; alt=&quot;How to negotiate a purchase agreement with buyers or agents|purchase agreement negotiation|Signing and accepting the Purchase Agreement|What Is a Purchase Agreement?|Understanding contingency clauses|Making a counteroffer|Countering the Terms of the Purchase Agreement|Countering the Price|Countering on the Contingencies of the Purchase Agreement|Always Keep Copies of your Purchase Agreement and other Documents&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/negotiating-purchase-agreement-with-buyers-or-agents</td>
+      <td>200</td>
+      <td>https://falaya.com/negotiating-purchase-agreement-with-buyers-or-agents/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to negotiate a purchase agreement with buyers or agents</td>
+      <td>https://falaya.com/negotiating-purchase-agreement-with-buyers-or-agents</td>
+      <td>200</td>
+      <td>https://falaya.com/negotiating-purchase-agreement-with-buyers-or-agents/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/fea-scaled-1.jpg&quot; title=&quot;fea-scaled&quot; alt=&quot;house appraisal|House appraisal|what is a house appraisal|house appraisal vs home inspection|home appraiser|real estate house appraisal|home buyers|home sellers|house appraisal|prepare for house appraisal&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/what-is-a-house-appraisal</td>
+      <td>200</td>
+      <td>https://falaya.com/what-is-a-house-appraisal/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>House Appraisal: Everything You Need to Know</td>
+      <td>https://falaya.com/what-is-a-house-appraisal</td>
+      <td>200</td>
+      <td>https://falaya.com/what-is-a-house-appraisal/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;How to Respond When a Buyer Asks You to Pay Their Agent’s Commission - What sellers should expect, how to negotiate fairly, and what risks to avoid.&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/responding-to-requests-for-buyer-agents-commission</td>
+      <td>200</td>
+      <td>https://falaya.com/responding-to-requests-for-buyer-agents-commission/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Respond When a Buyer Asks You to Pay Their Agent Commission</td>
+      <td>https://falaya.com/responding-to-requests-for-buyer-agents-commission</td>
+      <td>200</td>
+      <td>https://falaya.com/responding-to-requests-for-buyer-agents-commission/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2024/10/blog-cover-photo-2.png&quot; title=&quot;blog cover photo&quot; alt=&quot;blog cover photo&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/turn-trick-or-treaters-into-potential-buyers-with-a-halloween-open-house</td>
+      <td>200</td>
+      <td>https://falaya.com/turn-trick-or-treaters-into-potential-buyers-with-a-halloween-open-house/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Turn Trick-or-Treaters into Potential Buyers With A Halloween Open House</td>
+      <td>https://falaya.com/turn-trick-or-treaters-into-potential-buyers-with-a-halloween-open-house</td>
+      <td>200</td>
+      <td>https://falaya.com/turn-trick-or-treaters-into-potential-buyers-with-a-halloween-open-house/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2024/08/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;blog cover photo&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/navigating-buyer-agent-commission-rule-changes-for-sellers</td>
+      <td>200</td>
+      <td>https://falaya.com/navigating-buyer-agent-commission-rule-changes-for-sellers/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Navigating Buyer Agent Commission Rule Changes For Sellers</td>
+      <td>https://falaya.com/navigating-buyer-agent-commission-rule-changes-for-sellers</td>
+      <td>200</td>
+      <td>https://falaya.com/navigating-buyer-agent-commission-rule-changes-for-sellers/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/Picture1.jpg&quot; title=&quot;Is Closing Conducted by the Seller’s Agent , Who’s In Charge&quot; alt=&quot;Is Closing Conducted by the Seller’s Agent , Who’s In Charge&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/is-closing-conducted-by-the-sellers-agent-whos-in-charge</td>
+      <td>200</td>
+      <td>https://falaya.com/is-closing-conducted-by-the-sellers-agent-whos-in-charge/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Is Closing Conducted by the Seller’s Agent , Who’s In Charge</td>
+      <td>https://falaya.com/is-closing-conducted-by-the-sellers-agent-whos-in-charge</td>
+      <td>200</td>
+      <td>https://falaya.com/is-closing-conducted-by-the-sellers-agent-whos-in-charge/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>View All</td>
+      <td>https://falaya.com/category/sellers/moving-closing-sellers</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/moving-closing-sellers/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-1-1.jpg&quot; title=&quot;Young couple in new apartment with small dog&quot; alt=&quot;How to Prepare Yourselves to Move Into Your New House|10 Tips for Preparing to Move Into Your First House|What to do AFTER moving into a new house&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/prepare-to-move-into-your-new-house</td>
+      <td>200</td>
+      <td>https://falaya.com/prepare-to-move-into-your-new-house/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Prepare Yourselves to Move Into Your New House</td>
+      <td>https://falaya.com/prepare-to-move-into-your-new-house</td>
+      <td>200</td>
+      <td>https://falaya.com/prepare-to-move-into-your-new-house/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-3-scaled-1.jpg&quot; title=&quot;1-3-scaled&quot; alt=&quot;How to apply for mortgage: checklist|House for sale|calculate your income and debt obligations|credit history||improve your credit score to apply for mortgage|||organize your documents|Mortgage pre-approval|mortgage application|&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/how-to-apply-for-mortgage</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-apply-for-mortgage/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Apply for Mortgage: Checklist</td>
+      <td>https://falaya.com/how-to-apply-for-mortgage</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-apply-for-mortgage/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>View All</td>
+      <td>https://falaya.com/category/sellers/preparing-to-sell</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/preparing-to-sell/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;blog cover photo&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/writing-compelling-listing-description</td>
+      <td>200</td>
+      <td>https://falaya.com/writing-compelling-listing-description/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Writing a Compelling Listing Description That Works</td>
+      <td>https://falaya.com/writing-compelling-listing-description</td>
+      <td>200</td>
+      <td>https://falaya.com/writing-compelling-listing-description/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/Untitled-1.jpg&quot; title=&quot;Signs That You Should Sell Your Home&quot; alt=&quot;Signs That You Should Sell Your Home&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/signs-that-you-should-sell-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/signs-that-you-should-sell-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Signs That You Should Sell Your Home</td>
+      <td>https://falaya.com/signs-that-you-should-sell-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/signs-that-you-should-sell-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/advantages-and-disadvantages-of-open-houses.jpg&quot; title=&quot;advantages-and-disadvantages-of-open-houses&quot; alt=&quot;Advantages and Disadvantages of Open Houses&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/advantages-and-disadvantages-of-open-houses</td>
+      <td>200</td>
+      <td>https://falaya.com/advantages-and-disadvantages-of-open-houses/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Advantages and Disadvantages of Open Houses</td>
+      <td>https://falaya.com/advantages-and-disadvantages-of-open-houses</td>
+      <td>200</td>
+      <td>https://falaya.com/advantages-and-disadvantages-of-open-houses/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo-1.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;falaya pricing explained&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Falaya Pricing Explained: How to Choose the Right Home-Selling Option</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-pricing-explained-how-to-choose-the-right-home-selling-option/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;How to Sell Your Home In A Slow Market&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Sell Your Home in a Slow Market: Strategies That Work When Buyers Are Scarce</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;how to sell tenant-occupied property&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Sell a Tenant-Occupied Property: Rights, Timelines, and Best Practices</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2025/02/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;Falaya VS Zillow FSBO&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/zillow-fsbo-vs-falaya</td>
+      <td>200</td>
+      <td>https://falaya.com/zillow-fsbo-vs-falaya/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Zillow FSBO vs. Falaya: Which Platform Truly Serves Home Sellers?</td>
+      <td>https://falaya.com/zillow-fsbo-vs-falaya</td>
+      <td>200</td>
+      <td>https://falaya.com/zillow-fsbo-vs-falaya/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>View All</td>
+      <td>https://falaya.com/category/sellers/pricing-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/pricing-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-5.jpg&quot; title=&quot;A woman is holding a magnifying glass over a wooden houses. Real estate appraiser. Property valuation / appraisal. Find a house. Search for housing. Real estate market analysis. Selective focus&quot; alt=&quot;House Appraisal&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/appraisal-came-in-low-now-what</td>
+      <td>200</td>
+      <td>https://falaya.com/appraisal-came-in-low-now-what/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Appraisal came in low… now what?</td>
+      <td>https://falaya.com/appraisal-came-in-low-now-what</td>
+      <td>200</td>
+      <td>https://falaya.com/appraisal-came-in-low-now-what/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-1.jpg&quot; title=&quot;1-1&quot; alt=&quot;Price home to sell|Tips to successfully negotiate a purchase agreement|Dollar bills|Purchase agreement negotiation|successful negotiation|real estate finance|purchase agreement negotiations|real estate negotiations|Ask for what you want during negotiations|Learn what the other party needs during negotiations|waiting for response|walking away|Negotiation tips|purchase contract&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/price-home-to-sell</td>
+      <td>200</td>
+      <td>https://falaya.com/price-home-to-sell/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Price a Home to Sell</td>
+      <td>https://falaya.com/price-home-to-sell</td>
+      <td>200</td>
+      <td>https://falaya.com/price-home-to-sell/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1.jpg&quot; title=&quot;For Sale by Owner&quot; alt=&quot;Sell your house for sale by owner|Selling your house for sale by owner|Selling your house for sale by owner-declutter|Selling your house for sale by owner-renovations|Come up with your asking price|Selling your house for sale by owner|House marketing|House marketing|Professional photography|Professional Videography|House negotiations|MLS listing service||For sale by owner&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>The Process of Selling your House For Sale by Owner</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2023/11/1-3-1.jpg&quot; title=&quot;1-3&quot; alt=&quot;How to Calculate your Net Proceeds for your home?&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/how-to-calculate-your-net-proceeds-for-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-calculate-your-net-proceeds-for-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How to Calculate your Net Proceeds for your home?</td>
+      <td>https://falaya.com/how-to-calculate-your-net-proceeds-for-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-calculate-your-net-proceeds-for-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>View All</td>
+      <td>https://falaya.com/category/sellers/timing-your-sale</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/timing-your-sale/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;1200&quot; height=&quot;630&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1200,h_630/https://falaya.com/wp-content/uploads/2023/11/Essential-Steps-to-Sell-Your-Home-Photo.jpg&quot; class=&quot;attachment-full size-full wp-image-4317&quot; alt=&quot;Timeline for Selling your Home&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1200/https://falaya.com/wp-content/uploads/2023/11/Essential-Steps-to-Sell-Your-Home-Photo.jpg 1200w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/Essential-Steps-to-Sell-Your-Home-Photo-300x158.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2023/11/Essential-Steps-to-Sell-Your-Home-Photo-1024x538.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2023/11/Essential-Steps-to-Sell-Your-Home-Photo-768x403.jpg 768w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; /&gt;</td>
+      <td>https://falaya.com/timeline-for-selling-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/timeline-for-selling-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>A Timeline for Selling your Home: What to do?</td>
+      <td>https://falaya.com/timeline-for-selling-your-home</td>
+      <td>200</td>
+      <td>https://falaya.com/timeline-for-selling-your-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;680&quot; height=&quot;440&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_680,h_440/https://falaya.com/wp-content/uploads/2023/11/home_loans_mortgage_shutterstock_454073599.jpg&quot; class=&quot;attachment-full size-full wp-image-4266&quot; alt=&quot;How long does it take to close a loan?|How long does it take to close on a home?|Typical Closing Times: By Loan Type|How Have Closing Times Changed Over Time?|How Can I Get a Quick Home Loan Closing?|What happens at a mortgage loan closing?|What you need to bring to the closing|What you’ll pay at closing|Closing day&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_680/https://falaya.com/wp-content/uploads/2023/11/home_loans_mortgage_shutterstock_454073599.jpg 680w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/home_loans_mortgage_shutterstock_454073599-300x194.jpg 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt;</td>
+      <td>https://falaya.com/how-long-does-it-take-to-close-a-loan</td>
+      <td>200</td>
+      <td>https://falaya.com/how-long-does-it-take-to-close-a-loan/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>How long does it take to close a loan?</td>
+      <td>https://falaya.com/how-long-does-it-take-to-close-a-loan</td>
+      <td>200</td>
+      <td>https://falaya.com/how-long-does-it-take-to-close-a-loan/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2560&quot; height=&quot;2048&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2560,h_2048/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1.jpg&quot; class=&quot;attachment-full size-full wp-image-3982&quot; alt=&quot;Sell your house for sale by owner|Selling your house for sale by owner|Selling your house for sale by owner-declutter|Selling your house for sale by owner-renovations|Come up with your asking price|Selling your house for sale by owner|House marketing|House marketing|Professional photography|Professional Videography|House negotiations|MLS listing service||For sale by owner&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2560/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1.jpg 2560w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1-300x240.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1-1024x819.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1-768x614.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1-1536x1229.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2023/11/2844038-min-scaled-1-2048x1638.jpg 2048w&quot; sizes=&quot;(max-width: 2560px) 100vw, 2560px&quot; /&gt;</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-your-house-for-sale-by-owner/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;1920&quot; height=&quot;1280&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1920,h_1280/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house.jpg&quot; class=&quot;attachment-full size-full wp-image-3980&quot; alt=&quot;|&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1920/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house.jpg 1920w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house-300x200.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house-1024x683.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house-768x512.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2023/11/Girl-in-front-of-a-house-1536x1024.jpg 1536w&quot; sizes=&quot;(max-width: 1920px) 100vw, 1920px&quot; /&gt;</td>
+      <td>https://falaya.com/selling-in-six-steps-with-unlockd</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-in-six-steps-with-unlockd/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Selling in six steps with Falaya</td>
+      <td>https://falaya.com/selling-in-six-steps-with-unlockd</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-in-six-steps-with-unlockd/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>(no text)</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-your-home-in-a-slow-market/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1.jpg&quot; class=&quot;attachment-full size-full wp-image-13389&quot; alt=&quot;how to sell tenant-occupied property&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2025/11/blog-cover-photo-1-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; /&gt;</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property</td>
+      <td>200</td>
+      <td>https://falaya.com/how-to-sell-a-tenant-occupied-property/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;2240&quot; height=&quot;1260&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240,h_1260/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3.jpg&quot; class=&quot;attachment-full size-full wp-image-4394&quot; alt=&quot;title image of the blog post&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2240/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3.jpg 2240w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3-300x169.jpg 300w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1024/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3-1024x576.jpg 1024w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_768/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3-768x432.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_1536/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3-1536x864.jpg 1536w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_2048/https://falaya.com/wp-content/uploads/2023/11/Finding-A-Home-3-2048x1152.jpg 2048w&quot; sizes=&quot;(max-width: 2240px) 100vw, 2240px&quot; /&gt;</td>
+      <td>https://falaya.com/why-may-is-the-best-month-to-sell-a-home</td>
+      <td>200</td>
+      <td>https://falaya.com/why-may-is-the-best-month-to-sell-a-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Why May is the Best Month to Sell a Home</td>
+      <td>https://falaya.com/why-may-is-the-best-month-to-sell-a-home</td>
+      <td>200</td>
+      <td>https://falaya.com/why-may-is-the-best-month-to-sell-a-home/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; width=&quot;650&quot; height=&quot;488&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_650,h_488/https://falaya.com/wp-content/uploads/2023/11/Home-during-Holidays-w-logo-1.jpg&quot; class=&quot;attachment-full size-full wp-image-4345&quot; alt=&quot;Selling A Home During the Holidays|Selling your home during the holidays|sell your home with falaya&quot; title=&quot;Blog&quot; srcset=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_650/https://falaya.com/wp-content/uploads/2023/11/Home-during-Holidays-w-logo-1.jpg 650w, https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_300/https://falaya.com/wp-content/uploads/2023/11/Home-during-Holidays-w-logo-1-300x225.jpg 300w&quot; sizes=&quot;(max-width: 650px) 100vw, 650px&quot; /&gt;</td>
+      <td>https://falaya.com/selling-a-home-during-the-holidays</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-a-home-during-the-holidays/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Selling A Home During the Holidays</td>
+      <td>https://falaya.com/selling-a-home-during-the-holidays</td>
+      <td>200</td>
+      <td>https://falaya.com/selling-a-home-during-the-holidays/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>View All</td>
+      <td>https://falaya.com/category/sellers/tips-advice</td>
+      <td>200</td>
+      <td>https://falaya.com/category/sellers/tips-advice/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2024/10/blog-cover-photo-1.png&quot; title=&quot;blog cover photo&quot; alt=&quot;The Real Cost of using Listing Agent vs Falaya&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/listing-agent-vs-falaya-the-real-cost</td>
+      <td>200</td>
+      <td>https://falaya.com/listing-agent-vs-falaya-the-real-cost/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Listing Agent VS Falaya: The Real Cost to Investors</td>
+      <td>https://falaya.com/listing-agent-vs-falaya-the-real-cost</td>
+      <td>200</td>
+      <td>https://falaya.com/listing-agent-vs-falaya-the-real-cost/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2024/10/blog-cover-photo.png&quot; title=&quot;blog cover photo&quot; alt=&quot;Real Estate Investors&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/savvy-real-estate-investors-love-falaya</td>
+      <td>200</td>
+      <td>https://falaya.com/savvy-real-estate-investors-love-falaya/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Why Falaya is the Go-To Platform for Savvy Real Estate Investors</td>
+      <td>https://falaya.com/savvy-real-estate-investors-love-falaya</td>
+      <td>200</td>
+      <td>https://falaya.com/savvy-real-estate-investors-love-falaya/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2026/02/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;commission settlement buyer agent compensation&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement</td>
+      <td>200</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>18 Months After The Commission Settlement: The Stunning Reality Nobody Wants to Admit</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement</td>
+      <td>200</td>
+      <td>https://falaya.com/eighteen-months-after-the-commission-settlement/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2026/01/blog-cover-photo.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;Falaya Launches In north carolina&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Falaya Launches in North Carolina: A New Way to List on the MLS and Save Thousands</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina</td>
+      <td>200</td>
+      <td>https://falaya.com/falaya-launches-in-north-carolina/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/uploads/2025/12/blog-cover-photo-1.jpg&quot; title=&quot;blog cover photo&quot; alt=&quot;home isn&amp;#039;t selling&quot; loading=&quot;lazy&quot; /&gt;</td>
+      <td>https://falaya.com/why-your-home-isnt-selling</td>
+      <td>200</td>
+      <td>https://falaya.com/why-your-home-isnt-selling/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Why Your Home Isn’t Selling and How to Fix It Without Dropping the Price</td>
+      <td>https://falaya.com/why-your-home-isnt-selling</td>
+      <td>200</td>
+      <td>https://falaya.com/why-your-home-isnt-selling/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;Save thousands in commissions and sell your home on your own terms with Falaya! This video showcases our innovative platform and how it can help you achieve your home-selling goals.  Where else you can find us?  INSTAGRAM: https://instagram.com/falayarealestate/
+FACEBOOK: https://www.facebook.com/FalayaRealEs...
+TWITTER: https://twitter.com/falayarealestate/
+LINKEDIN: https://linkedin.com/company/falaya/
+VISIT OUR WEBSITE: https://falaya.com/
+Join the Falaya Family and subscribe to this channel!&quot; title=&quot;Videos&quot;&gt;Save thousands in commissions and sell your home on your own terms with Falaya! This video showcases our innovative platform and how it can help you...       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLmhoMlNHcjRnVVRn</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;Join the Falaya Focus Podcast for an inspiring conversation with Stephen Keighery, a true entrepreneurial success story!  Hear how he took his company HiPages from a small startup in Australia to a successful IPO, then landed in New Orleans to build a thriving real estate investment business, &amp;quot;Homebuyer Louisiana.&amp;quot;  Discover how he&amp;#039;s now leading investor meetups and making killer deals across the state.  This episode is packed with valuable insights for entrepreneurs and real estate investors alike! LET&amp;#039;S GET FOCUSED&quot; title=&quot;Videos&quot;&gt;Join the Falaya Focus Podcast for an inspiring conversation with Stephen Keighery, a true entrepreneurial success story!  Hear how he took his...       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLnB6bUVtRS01TjRv</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;Join us LIVE on Wednesday, August 21st at 7 pm as we sit down with Baton Rouge mayoral candidate Ted James on the Falaya Focus Podcast! 🎙️  We&amp;#039;ll dive deep into Ted&amp;#039;s vision for the future of Baton Rouge, specifically his plans for fostering a thriving business community and attracting new opportunities to East Baton Rouge Parish. 💼  Learn how Ted plans to leverage his extensive network and experience to bring positive change and economic growth to our city. 📈  Don&amp;#039;t miss this insightful conversation!  Set a reminder and tune in on August 21st at 7 pm.  #FalayaFocusPodcast #TedJames #BatonRouge #MayoralCandidate #BusinessCommunity #EconomicGrowth&quot; title=&quot;Videos&quot;&gt;Join us LIVE on Wednesday, August 21st at 7 pm as we sit down with Baton Rouge mayoral candidate Ted James on the Falaya Focus Podcast! 🎙️ ...       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLnJNakIzZ3AyMkJJ</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;The real estate landscape is changing. 🏡  Did you know recent legal decisions have shifted how buyer agent commissions work?  This video empowers sellers to understand these changes and navigate the new world of concessions.  We&amp;#039;ll break down:  The shift in commission responsibility - who pays what now?
+What are seller concessions? How can they impact your sale?
+Pros and cons of disclosing concessions - should you reveal your hand?
+How Falaya protects your negotiating position - transparency and control.
+Whether you&amp;#039;re selling FSBO or working with an agent, this video is essential.  Falaya is here to equip you with the knowledge you need to make informed decisions. Sell your home with confidence using our innovative platform and expert support.  Connect with us:
+Visit Falaya&amp;#039;s website: 
+- www.falaya.com
+Follow us on social media for more real estate tips:
+- INSTAGRAM: https://instagram.com/falayarealestate/
+- FACEBOOK: https://www.facebook.com/FalayaRealEs...
+- TWITTER: https://twitter.com/falayarealestate/
+- LINKEDIN: https://linkedin.com/company/falaya/  Remember: Like, comment, and subscribe to stay updated on the latest real estate insights!  #realestate #homeselling #commissions #falaya #realestatecommissions #buyeragentfees #sellertips #concessions #homesellingtips #FSBO&quot; title=&quot;Videos&quot;&gt;The real estate landscape is changing. 🏡  Did you know recent legal decisions have shifted how buyer agent commissions work?  This video empowers...       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLkVlODhORVlXd0lB</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;Videos&quot; title=&quot;Videos&quot;&gt;       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLldpZFdBMmctTEw4</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>&lt;img decoding=&quot;async&quot; src=&quot;https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://falaya.com/wp-content/plugins/youtube-feed-pro/img/placeholder.png&quot; alt=&quot;The real estate industry is undergoing a massive shift due to recent changes in buyer agent commissions. While much of the focus has been on buyers, sellers are also significantly impacted. The way agents get paid is changing, and it could significantly impact your home sale. In this video, we&amp;#039;ll uncover how these changes affect your ability to sell your home, the potential financial implications, and the strategies you need to adapt and succeed in this new market.  Let’s dive deep into the seller&amp;#039;s perspective of this major shake-up.  Chapters:
+00:00 Introduction
+00:45 The Old vs. New Commission Model 
+02:29 The Emergence Of Seller Concessions
+05:01 Real-World Examples
+05:44 Strategies for Success
+06:44 Conclusion  We&amp;#039;ll uncover:
+The Old vs. New Agent Commission Model How the traditional realtor commission model is being disrupted and what it means for your wallet.  The Buyer vs Seller Disconnect: Why buyers might struggle to pay their agents and how that impacts your offers and negotiations.  The Ripple Effects on Sellers: Both the potential benefits (more control, transparency) and drawbacks (fewer offers, pressure on pricing) you&amp;#039;ll face.  Real-World Examples: Hear stories from Falaya&amp;#039;s experiences with sellers navigating these new rules.  Strategies for Success: Learn actionable tips for pricing, negotiating, and even saving money on commissions with innovative solutions like Falaya&amp;#039;s flat-fee MLS service.  Don&amp;#039;t let these changes catch you off guard. This video is your essential guide to selling your home in this new era of real estate. Arm yourself with knowledge and take control of your sale!  #realestate #sellertips #commissionchanges #realestateagent #homeselling #realestatemarket #Falaya #realestatelawsuit #commissionchanges2024 #realtorfees #homesellingtips #realestatetrends #realestatetips #realestateinvesting #realestatenews #homeowners #fyp #shorts #foryoupage #newrules #moneymatters #housingmarket #realestateagenttips #realestateagency #sellingyourhome #realestatelife #commissionsecrets  Links:
+- Learn more about Falaya Real Estate: https://falaya.com/
+- Read our blog post on this topic: https://falaya.com/navigating-buyer-agent-commission-changes-for-sellers/  Subscribe to our channel for more valuable real estate insights and stay ahead of the curve!  Where else you can find us?  INSTAGRAM: https://instagram.com/falayarealestate/
+FACEBOOK: https://www.facebook.com/FalayaRealEs...
+TWITTER: https://twitter.com/falayarealestate/
+LINKEDIN: https://linkedin.com/company/falaya/
+VISIT OUR WEBSITE: https://falaya.com/
+Join the Falaya Family and subscribe to this channel!&quot; title=&quot;Videos&quot;&gt;The real estate industry is undergoing a massive shift due to recent changes in buyer agent commissions. While much of the focus has been on buyers,...       YouTube Video VVUzSVR1NlJieTJ1OUxZeUhpSC1NSjBnLkdMZ1BPaElsbEQ0</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/plugins/youtube-feed-pro/img/lightbox-placeholder.png</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Download</td>
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Contact Us</td>
+      <td>https://falaya.com/contact</td>
+      <td>200</td>
+      <td>https://falaya.com/contact/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Terms of Use</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Information About Brokerage Services</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Blogs</td>
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Videos</td>
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>FAQ’s</td>
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Meet The Team</td>
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>Features</td>
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-builder</td>
+      <td>Info About Brokerage Services,</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-builder</td>
+      <td>Terms of Use,</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-builder</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-owner</td>
+      <td>Info About Brokerage Services,</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-owner</td>
+      <td>Terms of Use,</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/home-owner</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/institutional-investor</td>
+      <td>Info About Brokerage Services,</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/institutional-investor</td>
+      <td>Terms of Use,</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/institutional-investor</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/real-estate-investor</td>
+      <td>Info About Brokerage Services,</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td>200</td>
+      <td>https://falaya.com/wp-content/uploads/2025/04/TREC-Information-About-Brokerage-Services-2025.pdf</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/real-estate-investor</td>
+      <td>Terms of Use,</td>
+      <td>https://falaya.com/tos</td>
+      <td>200</td>
+      <td>https://falaya.com/tos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/sell/real-estate-investor</td>
+      <td>Privacy Policy</td>
+      <td>https://falaya.com/privacy-policy</td>
+      <td>200</td>
+      <td>https://falaya.com/privacy-policy/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  <script>
+    const filterSelect_pages = document.getElementById('filter-pages');
+    const rows_pages = document.querySelectorAll('#pages tbody tr');
+    filterSelect_pages.addEventListener('change', () => {
+      const selected = filterSelect_pages.value;
+      rows_pages.forEach((row) => {
+        const state = row.getAttribute('data-result');
+        row.style.display = (selected === 'ALL' || state === selected) ? '' : 'none';
+      });
+    });
+  </script>
+    
+  <script>
+    const filterSelect_footer = document.getElementById('filter-footer');
+    const rows_footer = document.querySelectorAll('#footer tbody tr');
+    filterSelect_footer.addEventListener('change', () => {
+      const selected = filterSelect_footer.value;
+      rows_footer.forEach((row) => {
+        const state = row.getAttribute('data-result');
+        row.style.display = (selected === 'ALL' || state === selected) ? '' : 'none';
+      });
+    });
+  </script>
+    
+</body>
+</html>

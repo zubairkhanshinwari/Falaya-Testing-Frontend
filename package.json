@@ -1,0 +1,24 @@
+{
+  "name": "mcp-falaya",
+  "version": "1.0.0",
+  "description": "Playwright automation for falaya.com URL and mobile responsive verification",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:url": "playwright test tests/falaya-url-verification.spec.ts",
+    "test:mobile": "playwright test tests/falaya-mobile-responsive.spec.ts",
+    "report:open": "playwright show-report",
+    "allure:clean": "if exist allure-results rmdir /s /q allure-results && if exist allure-report rmdir /s /q allure-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "test:allure": "npm run allure:clean && playwright test && npm run allure:generate"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29",
+    "allure-commandline": "^2.37.0",
+    "allure-playwright": "^3.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

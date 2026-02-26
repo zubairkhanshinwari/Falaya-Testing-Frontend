@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Falaya Mobile Responsive Report</title>
+  <style>
+    body { font-family: Segoe UI, sans-serif; margin: 20px; background: #f7f9fc; color: #1f2937; }
+    h1, h2 { margin: 0 0 12px; }
+    .card { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f3f4f6; position: sticky; top: 0; }
+    tr[data-result='PASS'] td.result { color: #15803d; font-weight: 600; }
+    tr[data-result='FAIL'] td.result { color: #b91c1c; font-weight: 700; }
+    .controls { margin-bottom: 10px; }
+    .summary span { display: inline-block; margin-right: 12px; font-weight: 600; }
+    a { color: #1d4ed8; }
+  </style>
+</head>
+<body>
+
+    <div class="card">
+      <h1>Falaya mobile responsive</h1>
+      <div class="summary">
+        <span>Total: 16</span>
+        <span>PASS: 12</span>
+        <span>FAIL: 4</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <label>Filter:
+          <select id="filter-mobile">
+            <option value="ALL">All</option>
+            <option value="PASS">PASS only</option>
+            <option value="FAIL">FAIL only</option>
+          </select>
+        </label>
+      </div>
+      <table id="mobile">
+        <thead>
+          <tr>
+            <th>URL</th><th>Status</th><th>Final URL</th><th>Result</th><th>Reason</th>
+            <th>Viewport</th><th>ScrollWidth</th><th>Horizontal Scroll</th><th>Offscreen Elements</th>
+            <th>Menu Opened</th><th>Notes</th><th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/about-us</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/about-us/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/about-falaya-about-us.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/falaya-mobile-app</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/falaya-mobile-app/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/about-falaya-falaya-mobile-app.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/testimonials</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/testimonials/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/about-falaya-testimonials.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/about-falaya/transaction-management</td>
+      <td>200</td>
+      <td>https://falaya.com/about-falaya/transaction-management/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/about-falaya-transaction-management.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/comparison</td>
+      <td>200</td>
+      <td>https://falaya.com/comparison/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/comparison.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/features</td>
+      <td>200</td>
+      <td>https://falaya.com/features/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/features.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/pricing</td>
+      <td>200</td>
+      <td>https://falaya.com/pricing/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/pricing.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/faqs</td>
+      <td>200</td>
+      <td>https://falaya.com/research/faqs/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/research-faqs.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/home-sellers-guide</td>
+      <td>200</td>
+      <td>https://falaya.com/research/home-sellers-guide/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/research-home-sellers-guide.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/learn</td>
+      <td>200</td>
+      <td>https://falaya.com/research/learn/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/research-learn.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/real-estate-documents</td>
+      <td>200</td>
+      <td>https://falaya.com/research/real-estate-documents/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/research-real-estate-documents.png">Screenshot</a></td>
+    </tr>
+<tr data-result="PASS">
+      <td>https://falaya.com/research/videos</td>
+      <td>200</td>
+      <td>https://falaya.com/research/videos/</td>
+      <td class="result">PASS</td>
+      <td>All checks passed</td>
+      <td>428</td>
+      <td>428</td>
+      <td>false</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/research-videos.png">Screenshot</a></td>
+    </tr>
+<tr data-result="FAIL">
+      <td>https://falaya.com/sell/home-builder</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/home-builder/</td>
+      <td class="result">FAIL</td>
+      <td>Horizontal scroll detected</td>
+      <td>428</td>
+      <td>437</td>
+      <td>true</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/sell-home-builder.png">Screenshot</a></td>
+    </tr>
+<tr data-result="FAIL">
+      <td>https://falaya.com/sell/home-owner</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/home-owner/</td>
+      <td class="result">FAIL</td>
+      <td>Horizontal scroll detected</td>
+      <td>428</td>
+      <td>437</td>
+      <td>true</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/sell-home-owner.png">Screenshot</a></td>
+    </tr>
+<tr data-result="FAIL">
+      <td>https://falaya.com/sell/institutional-investor</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/institutional-investor/</td>
+      <td class="result">FAIL</td>
+      <td>Horizontal scroll detected</td>
+      <td>428</td>
+      <td>437</td>
+      <td>true</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/sell-institutional-investor.png">Screenshot</a></td>
+    </tr>
+<tr data-result="FAIL">
+      <td>https://falaya.com/sell/real-estate-investor</td>
+      <td>200</td>
+      <td>https://falaya.com/sell/real-estate-investor/</td>
+      <td class="result">FAIL</td>
+      <td>Horizontal scroll detected</td>
+      <td>428</td>
+      <td>437</td>
+      <td>true</td>
+      <td>0</td>
+      <td>false</td>
+      <td>No hamburger menu detected on this page</td>
+      <td><a href="screenshots/mobile/sell-real-estate-investor.png">Screenshot</a></td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  <script>
+    const filterSelect_mobile = document.getElementById('filter-mobile');
+    const rows_mobile = document.querySelectorAll('#mobile tbody tr');
+    filterSelect_mobile.addEventListener('change', () => {
+      const selected = filterSelect_mobile.value;
+      rows_mobile.forEach((row) => {
+        const state = row.getAttribute('data-result');
+        row.style.display = (selected === 'ALL' || state === selected) ? '' : 'none';
+      });
+    });
+  </script>
+    
+</body>
+</html>
