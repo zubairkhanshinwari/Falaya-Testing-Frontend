@@ -18,10 +18,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://falaya.com',
     headless: true,
-    viewport: null,
-    launchOptions: {
-      args: ['--start-maximized'],
-    },
+    viewport: { width: 1920, height: 1080 },
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
