@@ -11,9 +11,10 @@ export default defineConfig({
     timeout: 10_000,
   },
   reporter: [
+    [process.env.CI ? 'dot' : 'list'],
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['list'],
     ['allure-playwright', { outputFolder: 'allure-results' }],
+    ['@argos-ci/playwright/reporter', { uploadToArgos: !!process.env.ARGOS_TOKEN }],
   ],
   use: {
     baseURL: 'https://falaya.com',
